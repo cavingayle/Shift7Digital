@@ -10,7 +10,6 @@ import { GiUsaFlag } from 'react-icons/gi'
 const MobileMenu = ({ isOpen, toggle }) => {
   return (
     <MenuContainer isOpen={isOpen}>
-      <Icon ></Icon>
       <Menu>
         <MenuHead>
           MENU <CloseIcon onClick={toggle} />
@@ -81,17 +80,6 @@ const CloseIcon = styled(FaTimes)`
   font-size: 24px;
 `
 
-const Icon = styled.div`
-  position: absolute;
-  top: 0.1rem;
-  right: 1rem;
-  background: transparent;
-  border: transparent;
-  font-size: 1.2rem;
-  cursor: pointer;
-  outline: none;
-`
-
 const MenuWrapper = styled.div`
   padding: 0 20px;
 `
@@ -133,7 +121,7 @@ const Arrow = styled(IoIosArrowForward)`
 const MenuBottom = styled.div``
 const MenuBottomItem = styled.div`
   font-size: 15px;
-  padding: 25px 10px;
+  padding: 15px 10px;
   display: flex;
   align-items: center;
   svg {
